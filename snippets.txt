@@ -1,0 +1,20 @@
+
+if(true){    
+FILE *f1=fopen("1113d.bin","rb");
+FILE *f2=fopen("output/4080000_0360000_010_horz_.bin","rb");
+unsigned char val1,val2;
+fseek(f1,360*(480*1000+900),SEEK_SET);
+fseek(f2,360*(1480*2000+1900),SEEK_SET);
+for(int i=0;i<360;i++){
+    fread(&val1,1,1,f1);
+    fread(&val2,1,1,f2);
+    //val2=horizonsMatrix[360*2961900+i];
+    //printf("%02d,%02d,",val1,val2);
+    printf("%02d,",val2);
+    }
+fclose(f1);        
+fclose(f2);        
+
+
+exit(0);
+}
