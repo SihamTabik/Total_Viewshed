@@ -1,5 +1,5 @@
 # Total_Viewshed
-These are the source codes for calculating Total Viewshed on a very large high resolution DEM.
+These are the source codes for calculating Total Viewshed on very large high resolution DEM.
 
 The complete description of the Total Viewshed  algorithm can be found in this paper:
 
